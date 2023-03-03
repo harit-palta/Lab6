@@ -10,7 +10,7 @@ def encode(password):
     # return encoded password
     return encoded_pass
 
-def main():
+if __name__ == "__main__":
     run = True
     while run:
         print("Menu")
