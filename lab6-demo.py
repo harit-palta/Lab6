@@ -11,6 +11,7 @@ def encode(password):
     return encoded_pass
 
 def main():
+    run = True
     while run:
         print("Menu")
         print("-------------")
