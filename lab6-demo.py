@@ -11,6 +11,22 @@ def encode(password):
     # return encoded password
     return encoded_pass
 
+'''Modified below by:
+    Andrew Ballard
+    Group 37
+    Lab 6 Version Control'''
+
+def decode(encoded_password):
+    # string to store decoded, or original, user password
+    decoded_pass = ''
+
+    # takes each character in password and subracts 3 and mod value keeps within 0-9
+    for char in encoded_password:
+        decoded_pass += str((int(char) - 3) % 10)
+
+    return decoded_pass
+
+
 if __name__ == "__main__":
     run = True
     while run:
