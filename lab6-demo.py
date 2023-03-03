@@ -1,4 +1,5 @@
 #Harit Palta
+#Push new comment to git
 def encode(password):
     # string to store encoded password
     encoded_pass = ""
