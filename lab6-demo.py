@@ -10,23 +10,23 @@ def encode(password):
     # return encoded password
     return encoded_pass
 
-
-while run:
-    print("Menu")
-    print("-------------")
-    print("1. Encode")
-    print("2. Decode")
-    print("3. Quit")
-    print()
-    option = int(input("Please enter an option: "))
-
-    if option == 1:
-        password = input("Please enter your password to encode: ")
-        encode(password)
-        print("Your password has been encoded and stored!")
+def main():
+    while run:
+        print("Menu")
+        print("-------------")
+        print("1. Encode")
+        print("2. Decode")
+        print("3. Quit")
         print()
-    if option == 2:
-        print(f"The encoded password is {encode(password)}, and the original password is {password}.")
-        print()
-    if option == 3:
-        run = False
+        option = int(input("Please enter an option: "))
+
+        if option == 1:
+            password = input("Please enter your password to encode: ")
+            encode(password)
+            print("Your password has been encoded and stored!")
+            print()
+        if option == 2:
+            print(f"The encoded password is {encode(password)}, and the original password is {password}.")
+            print()
+        if option == 3:
+            run = False
